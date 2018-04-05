@@ -17,9 +17,10 @@ import * as firebase from 'Firebase';
 
 
 export class AddRoomPage {
-  data = { roomname:'' };
+  data = { roomname:'a' };
   ref = firebase.database().ref('chatrooms/');
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    
   }
 
   addRoom() {

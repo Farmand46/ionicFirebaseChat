@@ -11,10 +11,10 @@ export class HomePage {
   @ViewChild(Content) content: Content;
 
   data = { type:'', nickname:'', message:'' };
-chats = [];
-roomkey:string;
-nickname:string;
-offStatus:boolean = false;
+  chats = [];
+  roomkey:string;
+  nickname:string;
+  offStatus:boolean = false;
 
 /*  constructor(public navCtrl: NavController) {
 
@@ -72,9 +72,6 @@ constructor(public navCtrl: NavController, public navParams: NavParams) {
       nickname:this.nickname
     });
   }
-
-
-
 }
 
 
