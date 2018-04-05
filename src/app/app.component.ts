@@ -6,13 +6,18 @@ import * as firebase from 'firebase';
 
 import { HomePage } from '../pages/home/home';
 
-var config = {
-  apiKey: "AIzaSyCaJvhnUhkDVXSBDK_EdmTFCe-LnLBG3IM",
-  authDomain: "fir-projektforsoeg.firebaseapp.com",
-  databaseURL: "https://fir-projektforsoeg.firebaseio.com",
-  projectId: "fir-projektforsoeg",
-  storageBucket: "fir-projektforsoeg.appspot.com",
-  messagingSenderId: "736756674716"};
+
+
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCaJvhnUhkDVXSBDK_EdmTFCe-LnLBG3IM",
+    authDomain: "fir-projektforsoeg.firebaseapp.com",
+    databaseURL: "https://fir-projektforsoeg.firebaseio.com",
+    projectId: "fir-projektforsoeg",
+    storageBucket: "fir-projektforsoeg.appspot.com",
+    messagingSenderId: "736756674716"
+//
+  };
 
 @Component({
   templateUrl: 'app.html'
