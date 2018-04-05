@@ -2,8 +2,18 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import * as firebase from 'firebase';
 
 import { HomePage } from '../pages/home/home';
+
+var config = {
+  apiKey: "AIzaSyCaJvhnUhkDVXSBDK_EdmTFCe-LnLBG3IM",
+  authDomain: "fir-projektforsoeg.firebaseapp.com",
+  databaseURL: "https://fir-projektforsoeg.firebaseio.com",
+  projectId: "fir-projektforsoeg",
+  storageBucket: "fir-projektforsoeg.appspot.com",
+  messagingSenderId: "736756674716"};
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -17,6 +27,7 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
     });
+    firebase.initializeApp(config);
   }
 }
 
